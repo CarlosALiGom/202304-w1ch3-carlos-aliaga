@@ -1,0 +1,35 @@
+* {   
+  box-sizing: border-box;   
+  margin: 0;   
+  padding: 0; 
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background: rgb(39,153,137);
+  color: white;
+}
+
+h1 {
+  margin-top: 3px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+ul {
+display: flex;
+  margin-left: 35px;
+  padding: 10px;
+  list-style: none;
+  font-size: 10px;
+}
+
+ul ~ li {
+  margin-top: 15px;
+  margin-left: 5px;
+  padding: 5px;
+}

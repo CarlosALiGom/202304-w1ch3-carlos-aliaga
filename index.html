@@ -9,30 +9,36 @@
   <title>Mercadona-Lista de la compra</title>
 </head>
 <body>
-  <header>
-    <h1>Lista de la compra</h1>
-    <nav>
-      <ul>
-        <li>Principal</li>
-        <li>Lista</li>
-        <li>Acerca de</li>
-      </ul>
-    </nav>
-  </header>
-  <section class="first-section">
-    <snap></snap>
-    <h2>2/3 comprados</h2>
-  </section>
-  <div class="second-section">
-    <h3>Añadir artículo</h3>
-    <form>
-      <label for="product-name">Nombre</label>
-      <input type="text" id="product-name">
-      <label for="product-price">Precio</label>
-      <input type="number" id="product-price" required>
-      <p>€</p>
-      <button type="submit" name="submit-content">Añadir</button>
-    </form>
+  <div class="container">
+    <header>
+      <h1>Lista de la compra</h1>
+      <nav>
+        <ul>
+          <li>Principal</li>
+          <li>Lista</li>
+          <li>Acerca de</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="first-section">
+        <span class="lady-gaga">-</span>
+        <h2>2/3 comprados</h2>
+      </section>
+      <section class="second-section">
+        <h3 class="article-header">Añadir artículo</h3>
+        <form class="form">
+          <label for="product-name">Nombre:</label>
+          <input type="text" id="product-name">
+          <label for="product-price">Precio:</label>
+          <div class="input-price">
+            <input type="number" id="product-price" required>
+            <p>€</p>
+          </div>
+          <button type="submit" name="submit-content">Añadir</button>
+        </form>
+      </section>
+    </main>
   </div>
 
 </body>

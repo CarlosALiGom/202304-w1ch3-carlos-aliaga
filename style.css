@@ -1,77 +1,116 @@
-* {   
-  box-sizing: border-box;   
-  margin: 0;   
-  padding: 0; 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
 }
 
 header {
-  height: 50px;
   display: flex;
-  background: rgb(39,153,137);
+  height: 4rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39,153,137);
   color: white;
 }
 
 h1 {
-  margin-top: 15px;
-  padding: 5px;
-  font-size: 15px;
-}
-
-nav {
-  margin-top: 15px;
-  padding: 5px;
+  font-size: 1.2rem;
 }
 
 ul {
+  font-size: 0.8rem;
+  gap: 0.9rem;
   display: flex;
-  margin-left: 35px;
-  padding: 10px;
-  list-style: none;
-  font-size: 10px;
-}
-
-ul ~ li {
-  margin-left: 5px;
-  padding: 5px;
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
 .first-section {
-  background: rgb(68,160,128);
-  height: 50px;
-}
-
-h2 {
   color: white;
-  padding: 1rem;
-  font-size: 13px;
-  text-align: end;
+  background-color: rgb(68,160,128);
+  font-size: 0.7rem;
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-between;
+  padding: 0.7rem;
+  align-items: center;
 }
 
 .second-section {
+  background-color: rgb(255,200,69);
   display: flex;
   flex-direction: column;
-  background: rgb(255,200,69);
-  height: 551px;
-  padding: 1rem;
+  height: 100vh;
+  width: 100%;
 }
 
-form {
+.article-header {
+
+  height: 2rem;
+  padding: 0.7rem;
+}
+
+.form {
   display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+  flex-flow: row wrap;
   font-size: 0.8rem;
+  width: 90%;
+  padding: 0.7rem;
+  gap: 0.7rem;
+}
+
+label {
+  flex-basis: 90%;
 }
 
 input {
-  padding: auto;
-  width: 40%;
+  padding: 0.4rem;
+  width: 50%;
+}
+
+.input-price {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-content: center;
+  flex-basis: 100%;
+}
+
+.lady-gaga{
+  background-color: white;
+  color: rgb(68,160,128);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0.5rem;
 }
 
 button {
-  padding: auto;
-  width: 25%;
+  flex-basis: 30%;
+  width: 10%;
+  margin-right: 2rem;
+  height: 2rem;
+  background-color: rgb(68,160,128);
+  color: white;
+  border: 0px;
 }
